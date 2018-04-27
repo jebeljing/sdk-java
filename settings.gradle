@@ -1,3 +1,6 @@
-include 'discovery', 'discovery-model'
+include 'discovery', 'discovery-model', 'nba-events'
 project(":discovery").name = "discovery-java"
 project(":discovery-model").name = "discovery-model-java"
+project(":nba-events").name = "nba-events"
+include 'commerce'
+

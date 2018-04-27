@@ -30,7 +30,7 @@ public class AsciiArtTableExample {
    *    Update the <YOUR-API> variable below
    * </pre>
    */
-  private static String apikey = System.getProperty("ticketmaster-api-key", "<YOUR-KEY>");
+  private static String apikey = System.getProperty("ticketmaster-api-key", "cenRmyZndqAdEwzqpAGcxsDttrwAmh07");
 
   public static void main(String[] args) throws IOException {
     System.out.println("Welcome in the Ticketmaster Java SDK!");

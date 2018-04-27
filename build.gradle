@@ -17,8 +17,8 @@ subprojects {
   apply plugin: 'nebula.optional-base'
   apply plugin: 'nebula.provided-base'
   
-  targetCompatibility = "1.7"
-  sourceCompatibility = "1.7"
+  targetCompatibility = "1.8"
+  sourceCompatibility = "1.8"
   
   repositories {
       mavenCentral()
@@ -46,6 +46,19 @@ subprojects {
 project(':discovery-java') {
     dependencies {
         compile project(':discovery-model-java')
+    }
+}
+
+project(':nba-events') {
+    dependencies {
+        compile project(':discovery-java')
+    }
+}
+
+project(':commerce') {
+    dependencies {
+        compile project(':discovery-java')
+//        compile project(':discovery-model-java')
     }
 }
 

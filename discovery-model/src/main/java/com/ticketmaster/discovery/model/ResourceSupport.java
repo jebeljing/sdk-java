@@ -18,17 +18,17 @@ public abstract class ResourceSupport extends BaseModel {
   @Getter(AccessLevel.PRIVATE)
   @Setter(AccessLevel.PRIVATE)
   @JsonProperty("_embedded")
-  protected Embedded embedded;
+  public Embedded embedded;
 
   @Getter
   @Setter
   @ToString
   @EqualsAndHashCode
   @NoArgsConstructor
-  protected static class Embedded {
-    private List<Venue> venues;
-    private List<Attraction> attractions;
-    private List<Category> categories;
+  public static class Embedded {
+    public List<Venue> venues;
+    public  List<Attraction> attractions;
+    public List<Category> categories;
   }
 
 }
